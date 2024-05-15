@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="text_subtitulo">Formulario de Registro</string>
+    <string name="text_titulo">Examen de Admisión 2024</string>
+    <string name="text_nombres_completos">Apellidos y Nombre</string>
+    <string name="text_correo">Correo Electrónico</string>
+    <string name="text_clave">Clave</string>
+    <string name="text_fecha">Feha de Nacimiento</string>
+    <string name="text_carrera">Carrera</string>
+    <string name="radiobutton_Ing_Sistemas">Ingeniería de Sistemas</string>
+    <string name="radiobutton_Ing_Ambiental">Ingeniería Ambiental</string>
+    <string name="radiobutton_Ing_Mecanica">Ingeniería Mecánica</string>
+    <string name="radiobutton_Admin">Administración</string>
+    <string name="button_enviar">Enviar</string>
+    <string name="text_medio">¿Por qué medio se enteró de la convocatoria?</string>
+    <string name="checkbox_medios_rad">Radio</string>
+    <string name="checkbox_medios_inter">Internet</string>
+    <string name="checkbox_medios_amigo">Amigo</string>
+    <string name="checkbox_medios_publi">Publicidad</string>
+    <string name="btn_enviar">Enviar</string>
 </resources>
