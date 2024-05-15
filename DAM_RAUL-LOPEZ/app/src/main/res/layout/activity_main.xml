@@ -11,8 +11,8 @@
         android:id="@+id/radioGroup"
         android:layout_width="162dp"
         android:layout_height="203dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="334dp">
+        app:layout_constraintStart_toStartOf="@+id/textCarrera2"
+        app:layout_constraintTop_toBottomOf="@+id/textCarrera2">
 
         <RadioButton
             android:id="@+id/radioButton2"
@@ -55,7 +55,7 @@
         android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/checkBox10"
-        tools:layout_editor_absoluteY="591dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
 
     <CheckBox
         android:id="@+id/checkBox10"
@@ -65,7 +65,7 @@
         android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/checkBox9"
-        tools:layout_editor_absoluteY="543dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
 
     <CheckBox
         android:id="@+id/checkBox9"
@@ -75,7 +75,7 @@
         android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/checkBox7"
-        tools:layout_editor_absoluteY="495dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
 
     <CheckBox
         android:id="@+id/checkBox7"
@@ -85,16 +85,17 @@
         android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textMedio2"
-        tools:layout_editor_absoluteY="447dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textMedio2" />
 
     <TextView
         android:id="@+id/textMedio2"
         android:layout_width="196dp"
         android:layout_height="33dp"
+        android:layout_marginStart="120dp"
         android:text="@string/text_medio"
         android:textColor="#e2b142"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="406dp" />
+        app:layout_constraintStart_toEndOf="@+id/textCarrera2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -114,84 +115,96 @@
         android:id="@+id/textFechaNacimiento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
         android:text="@string/text_fecha"
         android:textColor="#e2b142"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="259dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textClave" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="50dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textCorreo2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toEndOf="@+id/textCorreo2"
-        app:layout_constraintTop_toTopOf="@+id/textCorreo2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <EditText
         android:id="@+id/editTextDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="date"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="278dp" />
+        app:layout_constraintStart_toEndOf="@+id/textFechaNacimiento"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <TextView
         android:id="@+id/textCarrera2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="1dp"
         android:text="@string/text_carrera"
         android:textColor="#e2b142"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="315dp" />
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/textFechaNacimiento"
+        tools:layout_editor_absoluteX="30dp" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="101dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textClave"
-        tools:layout_editor_absoluteY="222dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
 
     <TextView
         android:id="@+id/textCorreo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
         android:text="@string/text_correo"
         android:textColor="#e2b142"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="165dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNombresCompletos3" />
 
     <TextView
         android:id="@+id/textNombresCompletos3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="36dp"
         android:text="@string/text_nombres_completos"
         android:textColor="#e2b142"
-        app:layout_constraintTop_toBottomOf="@+id/textSubtitulo2"
-        tools:layout_editor_absoluteX="30dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSubtitulo2" />
 
     <TextView
         android:id="@+id/textClave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
         android:text="@string/text_clave"
         android:textColor="#e2b142"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="222dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCorreo2" />
 
     <TextView
         android:id="@+id/textSubtitulo2"
@@ -218,8 +231,11 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
         android:text="@string/btn_enviar"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="669dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
